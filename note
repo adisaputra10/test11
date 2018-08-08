@@ -1,0 +1,14 @@
+module "ec2" {
+    source = "../module/ec2"
+    ami = "ami-b7f388cb"
+    availability_zone = "ap-southeast-1b"
+    instance_count = 2
+    instance_type = "t2.small"
+    install_ec2 = "sudo apt-get install -y nginx"
+    vpc_security_group_ids = ["sg-e28a399b"]
+    tags = {
+        Name = "devops-test-test"
+        Env = "development"
+        Purpose = "utility test"
+    }
+}
