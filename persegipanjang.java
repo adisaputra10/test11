@@ -7,5 +7,6 @@ public class persegipanjang {
   System.out.println("Lebar:"+lebar);
   keliling =2*(luas+lebar);
   System.out.println("Hasil Keliling:"+keliling);
+  System.out.println("test jenkins");
  }
 }
